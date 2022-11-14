@@ -51,7 +51,7 @@ TWRP Device tree for the Samsung Galaxy SDM439 (android 11 and android 12)
 $ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 
 # Clone a12 repo
-$ git clone https://github.com/horoidrom/twrp_samsung_device_439 device/samsung/a12
+$ git clone https://github.com/horoidrom/twrp_samsung_device_439 device/samsung/m01q
 
 # Sync
 $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
