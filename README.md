@@ -45,3 +45,26 @@ TWRP Device tree for the Samsung Galaxy SDM439 (android 11 and android 12)
 |vibrate|yes|
 |screenshot|yes|
 |Partition SD card|yes|
+
+## How-to compile it:
+# Init repo
+$ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+
+# Clone a12 repo
+$ git clone https://github.com/horoidrom/twrp_samsung_device_439 device/samsung/a12
+
+# Sync
+$ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
+
+# Build
+$ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_m01q-eng; mka recoveryimage
+
+# Decrypt the data partition after installing TWRP.
+$ Boot TWRP; format DATA partition; start TWRP Terminal; type decrypt.
+# Encrypt the data partition after installing TWRP.
+$ Boot TWRP; format DATA partition; start TWRP Terminal; type encrypt.
+
+Blobs version:
+> Kernel base: Prebuilt Kernel.
+> Ramdisk, DTB, DTBO base: M015GXXU3BVB4
+
