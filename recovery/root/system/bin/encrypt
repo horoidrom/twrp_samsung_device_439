@@ -1,0 +1,20 @@
+#!/system/bin/sh
+#
+# A simple script to encrypt samsung sdm439
+#
+# Use this to prime your device after installing TWRP.
+
+mount /vendor
+echo " - Encrypting..."
+mount -o rw,remount /vendor
+cp system/cust/encrypt/fstab.qcom /vendor/etc
+umount /vendor
+
+echo " "
+echo " *****************************************************"
+echo " NOTE YOU CANNOT USE INTERNAL STORAGE FORM TWRP       "
+echo " BUT IN ANDROID 10/11/12/13+ LOCK SCREEN FULLY WORKING"
+echo " ALSO YOU CANNOT BACKUP AND RESTORE USERDATA          "
+echo " Finished. Formact Data and Reboot                    "
+echo " *****************************************************"
+echo " "

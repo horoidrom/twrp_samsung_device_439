@@ -1,0 +1,20 @@
+#!/system/bin/sh
+#
+# A simple script to decrypt samsung sdm439
+#
+# Use this to prime your device after installing TWRP.
+
+mount /vendor
+echo " - Decrypting..."
+mount -o rw,remount /vendor
+cp system/cust/decrypt/fstab.qcom /vendor/etc
+umount /vendor
+
+echo " "
+echo " *****************************************************"
+echo " NOTE YOU CANNOT USE LOCK SCREEN ON ANDROID 10 AND 11 "
+echo " BUT IN ANDROID 12/13+ LOCK SCREEN FULLY WORKING"
+echo " ALSO YOU CAN BACKUP AND RESTORE USERDATA"
+echo " Finished. Formact Data and Reboot"
+echo " *****************************************************"
+echo " "
