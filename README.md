@@ -19,8 +19,8 @@ TWRP Device tree for the Samsung Galaxy SDM439 (android 11 and android 12)
 |----|----|
 |Correct screen/recovery size|yes|
 |Working Touch, screen|yes|
-|Backup to internal/microSD|yes if encryption disabled|
-|Restore from internal/microSD|yesif encryption disabled|
+|Backup to internal/microSD|yes|
+|Restore from internal/microSD|yes|
 |reboot to system|yes|
 |ADB|yes|
 |update.zip sideload|yes|
@@ -28,8 +28,8 @@ TWRP Device tree for the Samsung Galaxy SDM439 (android 11 and android 12)
 |Screen goes off and on|yes|
 |F2FS/EXT4 Support, exFAT/NTFS where supported|yes|
 |all important partitions listed in mount/backup lists|yes|
-|backup/restore to/from external (USB-OTG) storage|yes if encryption disabled|
-|backup/restore to/from adb|yes if encryption disabled |
+|backup/restore to/from external (USB-OTG) storage|yes |
+|backup/restore to/from adb|yes|
 |decrypt /data|no|
 |Correct date|yes|
 |MTP export|yes|
