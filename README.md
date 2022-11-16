@@ -59,10 +59,16 @@ $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optim
 # Build
 $ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_m01q-eng; mka recoveryimage
 
-# Decrypt the data partition after installing TWRP.
-$ Boot TWRP; format DATA partition; start TWRP Terminal; type decrypt.
-# Encrypt the data partition after installing TWRP.
-$ Boot TWRP; format DATA partition; start TWRP Terminal; type encrypt.
+
+# Remove Samsung Securities after installing TWRP.
+$ Boot TWRP; start TWRP Terminal; type setup.
+# Decrypt the data partition after installing TWRP This will automatically wipe data.
+$ Boot TWRP; start TWRP Terminal; type decrypt.
+# Encrypt the data partition after installing TWRP This will automatically wipe data.
+$ Boot TWRP; start TWRP Terminal; type encrypt.
+#If you stuck in twrp after flashing any rom with encryption,
+# Encrypt the data partition after installing TWRP This will automatically wipe data.
+$ Boot TWRP; start TWRP Terminal; type encrypt.
 
 Blobs version:
 > Kernel base: Prebuilt Kernel.
