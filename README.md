@@ -66,8 +66,7 @@ $ Boot TWRP; start TWRP Terminal; type setup.
 $ Boot TWRP; start TWRP Terminal; type decrypt.
 # Encrypt the data partition after installing TWRP This will automatically wipe data.
 $ Boot TWRP; start TWRP Terminal; type encrypt.
-#If you stuck in twrp after flashing any rom with encryption,
-# Encrypt the data partition after installing TWRP This will automatically wipe data.
+# If you stuck in twrp after flashing any rom with encryption,
 $ Boot TWRP; start TWRP Terminal; type encrypt.
 
 Blobs version:
