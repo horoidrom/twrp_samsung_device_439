@@ -1,4 +1,4 @@
-TWRP Device tree for the Samsung Galaxy SDM439 (android 11 and android 12)
+TWRP Device tree for the Samsung Galaxy SDM439 (android 10 , 11 and android 12)
 =================================================
 
 | Basic                   | Spec Sheet                                                                                                                     |
