@@ -50,11 +50,13 @@ TWRP Device tree for the Samsung Galaxy SDM439 (android 10 , 11 and android 12)
 # Init repo
 $ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 
-# Clone m01q repo
-$ git clone https://github.com/SamsungSDM439/twrp_samsung_device_439 device/samsung/m01q
 
 # Sync
 $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
+
+# Clone m01q repo
+$ git clone https://github.com/SamsungSDM439/twrp_samsung_device_439 device/samsung/m01q
+
 
 # Build
 $ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_m01q-eng; mka recoveryimage
